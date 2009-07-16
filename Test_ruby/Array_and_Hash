@@ -1,0 +1,6 @@
+
+b = [1, "33", 3 , 5, 3]
+
+b.each { |ee| puts ee.to_s + "ee"}
+
+[1, "test", 2, 3, 4].each { |element1| puts element1.to_s + "X" }

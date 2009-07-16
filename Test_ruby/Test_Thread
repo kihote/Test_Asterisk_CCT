@@ -1,0 +1,12 @@
+a = Thread.new { print "a"; sleep(10); print "b1"; print "c1" }
+x = Thread.new { print "x"; Thread.pass; print "y"; print "z" }
+puts a.status
+x.join
+a.join# Let x thread finish, a will be killed on exit.
+puts a.status
+puts a.status
+puts a.status
+puts a.status
+
+a.run
+puts a.status
