@@ -25,12 +25,12 @@ require 'adhearsion/voip/asterisk/manager_interface'
 
 include Adhearsion::VoIP::Asterisk::Manager
 
-$asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "mark", :password => "mysecret"
+$asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "admin", :password => "1234"
 
 
 
 def testami
-  asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "mark", :password => "mysecret"
+  asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "admin", :password => "1234"
 
   response = asterisk.send_action "Originate", "Channel"=>"sip/8001@siprouter",
         "Exten"=>"8111", "Context"=>"siprouter", "Priority"=>"1"
@@ -39,7 +39,7 @@ def testami
 end
 
 def testami2
-  asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "mark", :password => "mysecret"
+  asterisk = ManagerInterface.connect :host => "192.168.1.251",  :username => "admin", :password => "1234"
 
   response = asterisk.send_action "Originate", "Channel"=>"sip/8000@siprouter",
         "Exten"=>"8111", "Context"=>"siprouter", "Priority"=>"1"

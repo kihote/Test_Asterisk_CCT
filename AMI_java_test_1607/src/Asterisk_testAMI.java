@@ -10,6 +10,10 @@ import java.io.IOException;
 import java.rmi.RemoteException;
 
 
+
+import java.util.concurrent.Executors;
+import java.util.concurrent.Executor;
+
 import org.asteriskjava.manager.AuthenticationFailedException;
 import org.asteriskjava.manager.ManagerConnection;
 import org.asteriskjava.manager.ManagerConnectionFactory;
@@ -20,12 +24,18 @@ import org.asteriskjava.manager.response.ManagerResponse;
 public class Asterisk_testAMI implements Runnable {
 
     private ManagerConnection managerConnection;
+    private static final int NTHREADS = 2;
+    private static final Executor exec
+            = Executors.newFixedThreadPool(NTHREADS);
+    
+    
 
     public Asterisk_testAMI()throws IOException {
 
         ManagerConnectionFactory factory = new ManagerConnectionFactory(
-                "192.168.1.251","mark","mysecret");
+                "192.168.1.251","admin","1234");
         this.managerConnection = factory.createManagerConnection();
+       
         try
         {
             this.managerConnection.login();
@@ -36,22 +46,21 @@ public class Asterisk_testAMI implements Runnable {
         
     }
 
-    public void run()
+    public void callAgent(String phoneNumber)
     {
-        try{
-
+         try{
 
         OriginateAction originateAction;
         ManagerResponse managerResponse;
 
         originateAction = new OriginateAction();
-        originateAction.setChannel("SIP/8000@siprouter");
+        originateAction.setChannel("SIP/"+phoneNumber+"@siprouter");
         originateAction.setContext("siprouter");
         originateAction.setExten("8111");
         originateAction.setPriority(1);
         originateAction.setTimeout(30000);
 
-      //  managerConnection.login();
+//       managerConnection.login();
         managerResponse = managerConnection.sendAction(originateAction,30000);
 
         System.out.println(managerResponse.getResponse());
@@ -62,8 +71,18 @@ public class Asterisk_testAMI implements Runnable {
         {
             e.printStackTrace();
         }
+
+    }
+
+    public void run()
+    {
+
+
+
+      //  callAgent("8001");
+      //   callAgent("8000");
         System.out.println("aaa");
-        
+
 
     }
 
@@ -72,9 +91,11 @@ public class Asterisk_testAMI implements Runnable {
     {
         Asterisk_testAMI test;
         test = new Asterisk_testAMI();
-        Thread b = new  Thread(test);
+       Thread b = new  Thread(test);
 
-           b.start(); 
+        //  b.start();
+       exec.execute(test);
+        
         
 
 
