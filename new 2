@@ -1,0 +1,6 @@
+﻿Đặt code trong run access vào list để lấy số điện thoại goi
+
+vòng lặp nhận tham số là số người trong queue sẽ lặp.
+
+mỗi thread nên chạy đồng thời tối đa bao nhiêu người.
+
