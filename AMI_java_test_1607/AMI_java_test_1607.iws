@@ -16,8 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="" />
-    <ignored path=".idea/workspace.xml" />
     <ignored path="AMI_java_test_1607.iws" />
+    <ignored path=".idea/workspace.xml" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="Commander">
@@ -76,27 +76,79 @@
       <file leaf-file-name="Asterisk_testAMI.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Asterisk_testAMI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="50" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+            <state line="40" column="55" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Asterisk.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Asterisk.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Asterisk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="49" selection-start="1705" selection-end="1705" vertical-scroll-proportion="1.3537037">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="29" column="32" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomExample.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RandomExample.java">
+      <file leaf-file-name="Test_Asterisk.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Test_Asterisk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ContactDialer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ContactDialer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="87" selection-start="731" selection-end="739" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentCampaignDialer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AgentCampaignDialer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="61" selection-start="1356" selection-end="1356" vertical-scroll-proportion="1.3045564">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Contact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Contact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="78" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListContact.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ListContact.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="42" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentCampaign.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AgentCampaign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractCampaign.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AbstractCampaign.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,10 +196,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="AMI_java_test_1607" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -202,26 +250,26 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RandomExample">
-    <tempConfiguration default="false" name="RandomExample" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
-      <option name="MAIN_CLASS_NAME" value="RandomExample" />
+  <component name="RunManager" selected="Application.Test_Asterisk">
+    <tempConfiguration default="false" name="Test_Asterisk" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
+      <option name="MAIN_CLASS_NAME" value="Test_Asterisk" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -350,7 +398,7 @@
       <envs />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.RandomExample" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Test_Asterisk" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -392,7 +440,7 @@
     <configuration useDefault="true">C:\Documents and Settings\Administrator\Application Data\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -420,18 +468,18 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327252" sideWeight="0.5" order="7" side_tool="false" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6624857" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18770227" sideWeight="0.6624857" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18770227" sideWeight="0.6659065" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" />
@@ -508,13 +556,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/NoAnswerException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RandomExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
@@ -522,19 +563,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Asterisk_testAMI.java">
+    <entry file="file://$PROJECT_DIR$/src/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="50" selection-start="895" selection-end="895" vertical-scroll-proportion="0.0">
+        <state line="16" column="78" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Asterisk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="49" selection-start="1705" selection-end="1705" vertical-scroll-proportion="1.3537037">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="29" column="32" selection-start="929" selection-end="929" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgentCampaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AbstractCampaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="33" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NoAnswerException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Asterisk_testAMI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="55" selection-start="1210" selection-end="1210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test_Asterisk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ContactDialer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="87" selection-start="731" selection-end="739" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AgentCampaignDialer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="61" selection-start="1356" selection-end="1356" vertical-scroll-proportion="1.3045564">
+          <folding />
         </state>
       </provider>
     </entry>

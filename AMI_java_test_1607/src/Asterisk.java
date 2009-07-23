@@ -3,8 +3,11 @@ import java.util.concurrent.TimeoutException;
 import java.io.IOException;
 
 import org.asteriskjava.*;
+import org.asteriskjava.manager.*;
 import org.asteriskjava.manager.ManagerConnectionFactory;
 import org.asteriskjava.manager.ManagerConnection;
+import org.asteriskjava.manager.ManagerConnectionState;
+import org.asteriskjava.manager.AuthenticationFailedException;
 import org.asteriskjava.manager.action.OriginateAction;
 import org.asteriskjava.manager.response.ManagerResponse;
 
@@ -32,10 +35,47 @@ public class Asterisk implements  Observer {
 
 
 
-    public Asterisk(String host, String user, String password) throws IllegalStateException, IOException, AuthenticationException, TimeoutException
-    {
+    public Asterisk(String host, String user, String password) throws IllegalAccessError, IOException, AuthenticationFailedException,
+            org.asteriskjava.manager.TimeoutException
 
-        managerConnectionFactory = new  ManagerConnectionFactory(host, user, password);
+    {
+       try{
+
+              managerConnectionFactory = new  ManagerConnectionFactory(host, user, password);
+              for(int i =0 ; i < 10 ; i++)
+              {
+                ManagerConnection     c = managerConnectionFactory.createManagerConnection();
+                c.login();
+                this.dialerManagerPool.add(c);
+
+                Thread.sleep(150);
+              }
+
+       }  catch(InterruptedException ex)
+       {
+           ex.printStackTrace();
+       }
+
+
+    }
+
+    public  ManagerConnection getOneDialerManagerConnection()
+    {
+        Random generator = new Random();
+        ManagerConnection mgr = null;
+
+        synchronized (dialerManagerPool){
+            while(mgr == null ){
+
+                int i = generator.nextInt(10);
+                if (dialerManagerPool.get(i).getState() == ManagerConnectionState.CONNECTED) {
+                    System.out.println("Selected dialer manager connection number:" + i + "/" + 10);
+                    mgr = dialerManagerPool.get(i);
+              }
+            }  
+        }
+
+        return mgr;
 
     }
 
@@ -47,25 +87,23 @@ public class Asterisk implements  Observer {
 
         OriginateAction originateAction;
         ManagerResponse orManagerResponse = null;
+        ManagerConnection mgr = getOneDialerManagerConnection();
         try {
+
             originateAction = new OriginateAction();
             originateAction.setChannel("SIP/"+destination+"@siprouter");
-            originateAction.setContext("siprouter");
-            originateAction.setExten("8111");
+            originateAction.setContext(queueContext);
+            originateAction.setExten(queueExtension);
             originateAction.setPriority(1);
             originateAction.setTimeout(30000);
             originateAction.setCallerId("cetete");
 
-            orManagerResponse = originateAction.send
-                        
+            orManagerResponse = mgr.sendAction(originateAction,3000);
 
-            
-            
-            
-
-
-            
+        }catch(Exception e){
+            e.printStackTrace();
         }
+        return orManagerResponse;
 
     }
 
